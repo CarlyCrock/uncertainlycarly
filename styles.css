@@ -1,0 +1,112 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling -this is for UncertainlyCarly header */
+header {
+    background-color: rgb(253, 172, 172);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    display:flex;
+    font-family: Windsong, cursive;
+    font-size: 35px;
+    padding: 1cap;
+  
+}
+
+/* Profile Image -this section is for the profile photo */
+img {
+    border-radius: 50%;
+   width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 18px;
+}
+/* Body Styling */
+body {
+    background-color: rgb(253, 172, 172);
+    color: rgb(255, 255, 255);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    font-size: large;
+    padding:0;
+}
+/* Centered List Styling */
+.skillset {list-style: none;
+    padding:0;
+    font-size: x-large;
+    font-weight: 200;
+    
+    }
+    .centered-list {
+        list-style: none; /* Removes default bullets */
+        padding: 0;
+        font-style: normal;
+        font-size: x-large;
+        justify-items: space-evenly;
+        align-items: center;
+    }
+    
+    /* Text Overlay Container */
+    .container {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+       
+    }
+
+.about-me {font-family: poppins; 
+    font-style:normal;
+    font-weight: 200;}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 10px auto;
+    background: rgb(248, 158, 158);
+    border-radius: 8px;
+    box-shadow: 1cap 10px 10pt rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Keeps content from getting too wide on large screens */
+}
+
+/* Footer Styling */
+
+
+footer {padding: 50px;
+font-size: large;}
+
+.skills-header {font-size: xx-large;
+font-weight: 300;
+}
+
+.work-experience {font-size: xx-large;
+font-weight: 300;}
+
+.centered-list {font-weight:200;}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgb(253, 172, 172);  /* Choose your background color */
+    text-align: center;
+    padding: 10px 0;}
+
+    /* Style the social icons container */
+.social-icons a {
+    color: #fff;             /* Icon color */
+    font-size: 34px;         /* Icon size */
+    margin: 0 10px;          /* Spacing between icons */
+    text-decoration: none;   /* Remove underline from link */
+    transition: color 0.3s;
+  }
+  
+  /* Optional: Change color on hover */
+  .social-icons a:hover {
+    color: #ddd;
+  }

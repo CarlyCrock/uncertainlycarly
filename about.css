@@ -1,0 +1,80 @@
+/* Work & About Page Styling (Matching Home Page) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: #FAF3F0; /* Off-White Background */
+    color: #2D2D2D;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #005F73; /* Deep Teal Navigation */
+    padding: 20px 0; /* Increased padding for better spacing */
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF3F0;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #FFC857;
+}
+
+.section {
+    padding: 160px 20px 80px 20px; /* More space below nav */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #005F73;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #2D2D2D;
+}
+
+.work-card, .about-card {
+    background: #D7BDE2; /* Soft Lilac Background */
+    color: #2D2D2D;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.work-card h3, .about-card h3 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #005F73;
+}
+
+.work-card p, .about-card p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.footer {
+    padding: 60px;
+    background: #2D2D2D;
+    color: #FAF3F0;
+    font-family: 'Inter', sans-serif;
+}

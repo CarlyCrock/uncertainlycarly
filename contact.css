@@ -1,0 +1,330 @@
+/* Contact Page Styling with Brand Colors */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: #FAF3F0; /* Off-White Background */
+    color: #2D2D2D;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #005F73; /* Deep Teal Navigation */
+    padding: 20px 0; /* Increased padding for better spacing */
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF3F0;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #FFC857;
+}
+
+.section {
+    padding: 160px 20px 80px 20px; /* More space below nav */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #005F73; /* Deep Teal */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #FF5A5F; /* Electric Coral Hover */
+}
+
+/* Contact Form Styling */
+.fs-form {
+    max-width: 500px;
+    margin: 100px auto 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #FF5A5F; /* Electric Coral Border */
+}
+
+.fs-field {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fs-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #005F73; /* Deep Teal Labels */
+}
+
+.fs-input, .fs-textarea {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #D7BDE2; /* Soft Lilac Border */
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #FAF3F0; /* Off-White Background */
+    color: #2D2D2D;
+}
+
+.fs-textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.fs-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.fs-button-group {
+    text-align: center;
+}
+
+.fs-button {
+    background-color: #FF5A5F; /* Electric Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fs-button:hover {
+    background-color: #005F73; /* Deep Teal Hover */
+}
+
+.footer {
+    padding: 50px;
+    background: #2D2D2D; /* Charcoal Black */
+    color: #FAF3F0; /* Off-White Text */
+}
+/* Contact Page Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #005F73; /* Deep Teal */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FAF3F0; /* Off-White Circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+    transform: scale(1.4); /* Increased Expansion Effect */
+    color: #FF5A5F; /* Electric Coral Hover */
+    background-color: #FFC857; /* Goldenrod Yellow Hover */
+}
+
+/* Buttons */
+.button {
+    background-color: #FF5A5F; /* Electric Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005F73; /* Deep Teal Hover */
+}
+
+.footer {
+    padding: 50px;
+    background: #FAF3F0; /* Charcoal Black */
+    background-color: #FAF3F0;  /* Deep Teal Hover */
+    color:  #005F73; /* Off-White Text */
+}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Pacifico&family=Italiana&display=swap');
+
+/* Global Styling with Brand Colors */
+body {
+    margin: 0;
+    font-family: 'Lora', serif; /* Default body font for readability */
+    text-align: center;
+    background-color: #FAF3F0; /* Off-White Background */
+    color: #2D2D2D; /* Charcoal Black for Readability */
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 95, 115, 0.9); /* Deep Teal Navigation */
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif; /* Modern and bold navigation font */
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF3F0; /* Off-White Text */
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #FFC857; /* Goldenrod Yellow for Hover Effect */
+}
+
+.section {
+    padding: 100px 20px;
+}
+
+/* Home Page Styling */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #005F73; /* Deep Teal Hero Section */
+    color: #FAF3F0; /* Off-White Text */
+    font-family: 'Playfair Display', serif; /* Elegant and dramatic */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #FFC857; /* Goldenrod Yellow Accent */
+    font-family: 'Poppins', sans-serif; /* Bold, modern */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif; /* Crisp and modern */
+}
+
+/* About Page Styling */
+.about-section {
+    background: #D7BDE2; /* Soft Lilac Background */
+    padding: 80px 20px;
+    border-radius: 10px;
+    color: #2D2D2D; /* Charcoal Black Text */
+    font-family: 'Raleway', sans-serif; /* Elegant touch */
+}
+
+/* Work Page Styling */
+.work-section {
+    background: #FAF3F0;
+    padding: 80px 20px;
+    color: #2D2D2D;
+    font-family: 'Inter', sans-serif;
+}
+
+.work-card {
+    background: #005F73; /* Deep Teal Work Cards */
+    color: #FAF3F0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Page Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #005F73; /* Deep Teal */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FAF3F0; /* Off-White Circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+    transform: scale(1.4); /* Increased Expansion Effect */
+    color: #FF5A5F; /* Electric Coral Hover */
+    background-color: #FFC857; /* Goldenrod Yellow Hover */
+}
+
+/* Buttons */
+.button {
+    background-color: #FF5A5F; /* Electric Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:hover {
+    background-color: #005F73; /* Deep Teal Hover */
+}
+
+
+.footer {
+    padding: 50px;
+    background: #FAF3F0; /* Charcoal Black */
+    background-color: #FAF3F0;  /* Deep Teal Hover */
+    color:  #005F73; /* Off-White Text */
+}

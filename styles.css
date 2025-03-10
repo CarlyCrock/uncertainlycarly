@@ -1,112 +1,146 @@
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Header Styling -this is for UncertainlyCarly header */
-header {
-    background-color: rgb(253, 172, 172);
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-    display:flex;
-    font-family: Windsong, cursive;
-    font-size: 35px;
-    padding: 1cap;
-  
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Pacifico&family=Italiana&display=swap');
 
-/* Profile Image -this section is for the profile photo */
-img {
-    border-radius: 50%;
-   width: 300px;
-    height: 300px;
-    object-fit: cover;
-    padding: 18px;
-}
-/* Body Styling */
+/* Global Styling with Brand Colors */
 body {
-    background-color: rgb(253, 172, 172);
-    color: rgb(255, 255, 255);
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
+    margin: 0;
+    font-family: 'Lora', serif; /* Default body font for readability */
     text-align: center;
-    align-content: center;
-    font-size: large;
-    padding:0;
-}
-/* Centered List Styling */
-.skillset {list-style: none;
-    padding:0;
-    font-size: x-large;
-    font-weight: 200;
-    
-    }
-    .centered-list {
-        list-style: none; /* Removes default bullets */
-        padding: 0;
-        font-style: normal;
-        font-size: x-large;
-        justify-items: space-evenly;
-        align-items: center;
-    }
-    
-    /* Text Overlay Container */
-    .container {
-        position: relative;
-        display: inline-block;
-        text-align: center;
-       
-    }
-
-.about-me {font-family: poppins; 
-    font-style:normal;
-    font-weight: 200;}
-
-/* Section Styling */
-section {
-    padding: 40px 20px;
-    margin: 10px auto;
-    background: rgb(248, 158, 158);
-    border-radius: 8px;
-    box-shadow: 1cap 10px 10pt rgba(0, 0, 0, 0.1);
-    max-width: 900px; /* Keeps content from getting too wide on large screens */
+    background-color: #FAF3F0; /* Off-White Background */
+    color: #2D2D2D; /* Charcoal Black for Readability */
 }
 
-/* Footer Styling */
-
-
-footer {padding: 50px;
-font-size: large;}
-
-.skills-header {font-size: xx-large;
-font-weight: 300;
-}
-
-.work-experience {font-size: xx-large;
-font-weight: 300;}
-
-.centered-list {font-weight:200;}
-
-footer {
+.nav {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 0;
     width: 100%;
-    background-color:  rgb(253, 172, 172);  /* Choose your background color */
-    text-align: center;
-    padding: 10px 0;}
+    background: #005F73; /* Deep Teal Navigation */
+    padding: 20px 0; /* Increased padding for better spacing */
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+}
 
-    /* Style the social icons container */
-.social-icons a {
-    color: #fff;             /* Icon color */
-    font-size: 34px;         /* Icon size */
-    margin: 0 10px;          /* Spacing between icons */
-    text-decoration: none;   /* Remove underline from link */
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF3F0;
     transition: color 0.3s;
-  }
-  
-  /* Optional: Change color on hover */
-  .social-icons a:hover {
-    color: #ddd;
-  }
+}
+
+.nav a:hover {
+    color: #FFC857;
+}
+
+.section {
+    padding: 160px 20px 80px 20px; /* More space below nav */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Home Page Styling */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #005F73; /* Deep Teal Hero Section */
+    color: #FAF3F0; /* Off-White Text */
+    font-family: 'Playfair Display', serif; /* Elegant and dramatic */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #FFC857; /* Goldenrod Yellow Accent */
+    font-family: 'Poppins', sans-serif; /* Bold, modern */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif; /* Crisp and modern */
+}
+
+/* About Page Styling */
+.about-section {
+    background: #D7BDE2; /* Soft Lilac Background */
+    padding: 80px 20px;
+    border-radius: 10px;
+    color: #2D2D2D; /* Charcoal Black Text */
+    font-family: 'Raleway', sans-serif; /* Elegant touch */
+}
+
+/* Work Page Styling */
+.work-section {
+    background: #FAF3F0;
+    padding: 80px 20px;
+    color: #2D2D2D;
+    font-family: 'Inter', sans-serif;
+}
+
+.work-card {
+    background: #005F73; /* Deep Teal Work Cards */
+    color: #FAF3F0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Page Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #005F73; /* Deep Teal */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FAF3F0; /* Off-White Circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+    transform: scale(1.4); /* Increased Expansion Effect */
+    color: #FF5A5F; /* Electric Coral Hover */
+    background-color: #FFC857; /* Goldenrod Yellow Hover */
+}
+
+/* Buttons */
+.button {
+    background-color: #FF5A5F; /* Electric Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:hover {
+    background-color: #005F73; /* Deep Teal Hover */
+}
+
+
+.footer {
+    padding: 50px;
+    background: #FAF3F0; /* Charcoal Black */
+    background-color: #FAF3F0;  /* Deep Teal Hover */
+    color:  #005F73; /* Off-White Text */
+}

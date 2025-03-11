@@ -1,7 +1,17 @@
 /* Work & About Page Styling (Matching Home Page) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap');
 
-
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 1rem;
+      padding: 10px;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
 body {
     margin: 0;
     font-family: 'Lora', sans-serif;
@@ -24,7 +34,7 @@ body {
 .nav a {
     margin: 0 15px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: #FAF3F0;
     transition: color 0.3s;
 }
@@ -40,7 +50,7 @@ body {
 }
 
 .section h2 {
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-family: 'Poppins', sans-serif;
     color: #005F73;
     margin-bottom: 20px;
@@ -67,13 +77,13 @@ body {
 
 
 .work-card h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     color: #FAF3F0;
 }
 
 .work-card p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 

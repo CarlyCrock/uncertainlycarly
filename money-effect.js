@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const roastCard = document.querySelector(".roast-card");
+    const roastCards = document.querySelectorAll(".roast-card");
 
-    if (!roastCard) {
-        console.error("Error: .roast-card not found!");
+    if (!roastCards.length) {
+        console.error("Error: No .roast-card elements found!");
         return;
     }
 
@@ -37,35 +37,40 @@ document.addEventListener("DOMContentLoaded", function () {
         "Your jokes are like expired milk: sour and hard to swallow. 🥛"
     ];
 
-    roastCard.addEventListener("click", () => {
-        const roast = document.createElement("div");
-        roast.classList.add("roast");
-        roast.innerText = roasts[Math.floor(Math.random() * roasts.length)];
+    roastCards.forEach(card => {
+        card.addEventListener("click", function (event) {
+            const roast = document.createElement("div");
+            roast.classList.add("roast");
+            roast.innerText = roasts[Math.floor(Math.random() * roasts.length)];
 
-        // Position near the clicked card
-        const rect = roastCard.getBoundingClientRect();
-        roast.style.position = "absolute";
-        roast.style.left = `${rect.left + Math.random() * 50}px`; // Random shift
-        roast.style.top = `${rect.top - 50}px`; // Appear above the card
-        roast.style.padding = "10px 15px";
-        roast.style.background = "#FF6347"; // Tomato Red 🔥
-        roast.style.color = "#FFF";
-        roast.style.borderRadius = "10px";
-        roast.style.fontSize = "1.2rem";
-        roast.style.boxShadow = "0px 4px 10px rgba(0,0,0,0.3)";
-        roast.style.transition = "opacity 1s ease-in-out";
-        roast.style.opacity = "1";
-        roast.style.fontWeight = "bold";
-        roast.style.textAlign = "center";
-        roast.style.maxWidth = "250px";
-        roast.style.zIndex = "1000";
+            document.body.appendChild(roast);
 
-        document.body.appendChild(roast);
+            // Get roast-card position and size
+            const cardRect = card.getBoundingClientRect();
+            const roastRect = roast.getBoundingClientRect();
 
-        // Make the roast fade out & remove it
-        setTimeout(() => {
-            roast.style.opacity = "0";
-            setTimeout(() => roast.remove(), 1000);
-        }, 2000);
+            // Position the roast **centered** above the roast-card
+            roast.style.position = "absolute";
+            roast.style.left = `${cardRect.left + window.scrollX + cardRect.width / 2 - roastRect.width / 2}px`;
+            roast.style.top = `${cardRect.top + window.scrollY - roastRect.height - 10}px`; // Slightly above the card
+            roast.style.padding = "10px 15px";
+            roast.style.background = "#FF6347"; // Tomato Red 🔥
+            roast.style.color = "#FFF";
+            roast.style.borderRadius = "10px";
+            roast.style.fontSize = "1.2rem";
+            roast.style.boxShadow = "0px 4px 10px rgba(0,0,0,0.3)";
+            roast.style.transition = "opacity 1s ease-in-out";
+            roast.style.opacity = "1";
+            roast.style.fontWeight = "bold";
+            roast.style.textAlign = "center";
+            roast.style.maxWidth = "250px";
+            roast.style.zIndex = "1000";
+
+            // Make the roast fade out & remove it
+            setTimeout(() => {
+                roast.style.opacity = "0";
+                setTimeout(() => roast.remove(), 1000);
+            }, 2000);
+        });
     });
 });

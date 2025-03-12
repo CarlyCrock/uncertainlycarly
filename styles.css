@@ -50,10 +50,9 @@ body {
 
 .main-photo {
    
-    width: 100%;
-    width: 600px;
-    max-width: 1200px;
-    padding: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 

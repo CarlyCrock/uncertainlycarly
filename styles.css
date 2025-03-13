@@ -22,7 +22,7 @@ header {
     position: fixed;
     width: 100%;
     background: rgba(0, 0, 0, 0.395);
-    padding: 15px 0;
+    padding: 20px 0;
     z-index: 1000;
 }
 
@@ -48,12 +48,12 @@ nav ul li a:hover {
 
 /* Sections Styling */
 section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 100px 40px 20px;
     width: 100vw;
     max-width: 100%;
     position: relative;
@@ -61,7 +61,7 @@ section {
 
 /* Section 1 */
 #section1 {
-    padding-top: 80px;
+    padding-top: 120px;
     position: relative;
     background-color: #005f73; /* Base color */
     width: 100%;
@@ -215,7 +215,7 @@ form button:hover {
     
     section {
         height: auto;
-        padding: 60px 20px;
+        padding: 120px 20px 60px;
     }
     
     #section3 ul {

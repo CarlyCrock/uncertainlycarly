@@ -1,114 +1,240 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Pacifico&family=Italiana&display=swap');
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap');
+
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Lora', serif; 
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
     text-align: center;
-    background-color: #FAF3F0; 
-    color: #2D2D2D; 
-    cursor:grab; 
 }
 
-.nav {
+/* Navigation Bar */
+header {
     position: fixed;
-    top: 0;
     width: 100%;
-    background: #005F73; 
-    padding: 20px 0; 
-    font-family: 'Poppins', sans-serif;
+    background: rgba(0, 0, 0, 0.395);
+    padding: 15px 0;
     z-index: 1000;
 }
 
-.nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.0rem;
-    color: #FAF3F0;
-    transition: color 0.3s;
-    transition: ease-in-out 0.3s;
-    
-}
-
-.nav a:hover {
-    color: #FFC857;
-   
-    
-}
-
-.section {
-    padding: 160px 20px 80px 20px; /* More space below nav */
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.main-photo {
-   
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-
-
-/* Home Page Styling */
-.hero {
-    height: 100vh;
-   text-align: center;
+nav ul {
+    list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #F4E1C1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Sections Styling */
+section {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-   
-    background-color: #005F73; 
-    color: #FAF3F0; 
-    font-family: 'Playfair Display', serif; 
+    padding: 40px 20px;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
 }
 
-/* Main header Name styling */
-.hero h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: #FFC857; 
-    font-family: 'Poppins', sans-serif; 
+/* Section 1 */
+#section1 {
+    position: relative;
+    background-color: #005f73; /* Base color */
+    width: 100%;
+}
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F4E1C1;
+    margin-bottom: 20px;
 }
 
-.hero-container {
+#section1 .main-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: wheat;
+    transform: translate(-50%, -50%);
+    opacity: 0.1; /* Adjust transparency */
+    width: 500px; /* Adjust size */
+    height: auto;
+    z-index: 1;
+}
 
-    text-align: center;
-    justify-content: center;
-    display: flex;
+#section1 img {
+    width: 100%;
+    height: auto;
+}
+
+ #section1 p {
+    position: relative;
+    z-index: 2;
+    color: #F4E1C1;
     max-width: 600px;
-}
-.hero p {
-    font-size: 1.2rem;
-    font-family: 'Inter', sans-serif; 
-}
-
-
-
-.footer {
-    padding: 50px;
-    background: #FAF3F0; 
-    background-color: #FAF3F0;  
-    color:  #005F73; 
+    font-size: 1.3rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    padding: 0px;
+    border-radius: 0px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-      font-size: 1rem;
-      padding: 10px;
+/* Background Colors */
+#section2 { background: #F4E1C1; /* Complementary Beige */ width: 100%; }
+#section3 { background: #005f73; width: 100%; }
+#section4 { background: #F4E1C1; width: 100%; }
+
+/* Section 2 */
+#section2 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #005f73;
+    margin-bottom: 20px;
+}
+#section2 p {
+    font-size: 1.3rem;
+    color: #005f73;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.no-bullet-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Social Media Links */
+#section3 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+/* Social Media Icons */
+#section3 ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #F4E1C1;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+#section3 ul li a i {
+    font-size: 24px;
+}
+
+#section3 ul li a:hover {
+    color: #555;
+}
+
+#section3 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F4E1C1;
+    margin-bottom: 20px;
+}
+#section3 p {
+    font-size: 1.3rem;
+    color: #F4E1C1;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 0px;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+   
+    
+}
+
+form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+form button {
+    padding: 12px;
+    background: #005f73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    
+}
+
+form button:hover {
+    background: #333;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-    .container {
-      width: 90%;
-      margin: 0 auto;
+    
+    section {
+        height: auto;
+        padding: 60px 20px;
     }
-  }
-  
+    
+    #section3 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Section 4 */
+#section4 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #005f73;
+    margin-bottom: 20px;
+}
+#section4 p {
+    font-size: 1.3rem;
+    color: #005f73;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}

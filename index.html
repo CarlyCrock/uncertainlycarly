@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carly</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 
-		<title>HOME</title>
-		<link
-			rel="stylesheet"
-			href="styles.css" />
-	</head>
-	<body>
-		<nav class="nav">
-			<a href="index.html">HOME</a>
-			<a href="about.html">ABOUT</a>
-			<a href="contact.html">CONTACT</a>
-			<a href="work.html">WORK</a>
-		</nav>
+</head>
+<body>
 
-		<div class="hero">
-			<div class="main-photo">
-				<img
-					src="hairoutline.png"
-					alt="hair"
-					width="300px" />
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About Me</a></li>
+                <li><a href="#section3">My Content</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+		
+		
+	<div class="main-photo">
+		<img src="hairoutline.png" alt="Carly">
+	</div>
+	<div class="name"> <h1>Hi, I'm Carly</h1>
+
+	</div> 
+        <p>Curls, chaos, and cutting commentary. I serve up acerbic wit, 
+        unapologetic snark, and just the right amount of dark humor—because 
+        life’s too short for bad takes and boring conversations. If you're 
+        here for certainty, you’re in the wrong place.</p>
+    </section>
+
+    <section id="section2">
+        <h1>Random Facts about me:</h1>
+        <p><strong>
+			</strong></p>
+			  
+			<div class="no-bullet-list">
+				<p>I do not like donuts.</p>
+				<p>I listen to podcasts and audiobooks at 2.0x speed.</p>
+				<p>My dad is dead.</p>
 			</div>
-			<h1>UncertainlyCarly</h1>
-			<div class="hero-container">
-				<p>
-					Curls, chaos, and cutting commentary. I serve up acerbic wit,
-					unapologetic snark, and just the right amount of dark humor—because
-					life’s too short for bad takes and boring conversations. If you're
-					here for certainty, you’re in the wrong place.
-				</p>
-			</div>
-		</div>
+			
+      
+    </section>
 
-		<div class="footer">
-			<p>&copy; 2025 @UncertainlyCarly</p>
-		</div>
-	</body>
+    <section id="section3">
+        <h1>My Content</h1>
+        <p>Available on these platforms.</p>
+        <ul>
+            <li><a href="https://www.tiktok.com/@uncertainlycarly" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+            <li><a href="https://www.instagram.com/uncertainlycarly" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://substack.com/@uncertainlycarly" target="_blank"><i class="fas fa-envelope"></i> Substack</a></li>
+        </ul>
+    </section>
+
+    <section id="section4">
+        <h1>Contact</h1>
+        <p>Get in touch with me.</p>
+     
+			
+            <form action="https://formspree.io/f/mqapznjb" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				
+				<button type="submit">Send</button>
+			</form>
+			
+       
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>

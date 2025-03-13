@@ -79,8 +79,8 @@ section {
     left: 50%;
     color: wheat;
     transform: translate(-50%, -50%);
-    opacity: 0.1; /* Adjust transparency */
-    width: 200px; /* Adjust size */
+    opacity: 0.2; /* Adjust transparency */
+    width: 400px; /* Adjust size */
     height: auto;
     z-index: 1;
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ section {
     position: relative;
     z-index: 2;
     color: #F4E1C1;
-    max-width: 600px;
+    max-width: 400px;
     font-size: 1.0rem;
     text-align: center;
     background: rgba(0, 0, 0, 0);
@@ -110,7 +110,7 @@ section {
 
 /* Section 2 */
 #section2 h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #005f73;
     margin-bottom: 20px;

@@ -61,6 +61,7 @@ section {
 
 /* Section 1 */
 #section1 {
+    padding-top: 80px;
     position: relative;
     background-color: #005f73; /* Base color */
     width: 100%;
@@ -79,9 +80,10 @@ section {
     color: wheat;
     transform: translate(-50%, -50%);
     opacity: 0.1; /* Adjust transparency */
-    width: 500px; /* Adjust size */
+    width: 200px; /* Adjust size */
     height: auto;
     z-index: 1;
+    margin-bottom: 20px;
 }
 
 #section1 img {

@@ -8,7 +8,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 
 </head>
+
+
 <body>
+    <!-- Email Signup Popup -->
+<div id="email-popup" class="popup-overlay">
+    <div class="popup-content">
+        <h2>Join My Spamletter!</h2>
+        <p>Enter your email so I can spam you 10x a day</p>
+
+        <form id="email-form" action="https://formspree.io/f/mvgkgozk" method="POST">
+            <input type="email" id="email-input" name="email" placeholder="Your email..." required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <button id="close-popup">Close</button>
+    </div>
+</div>
+
 
     <header>
         <nav>
@@ -37,18 +54,17 @@
     </section>
 
     <section id="section2">
-        <h1>Random Facts about me:</h1>
-        <p><strong>
-			</strong></p>
-			  
-			<div class="no-bullet-list">
-				<p>I do not like donuts.</p>
-				<p>I listen to podcasts and audiobooks at 2.0x speed.</p>
-				<p>My dad is dead.</p>
-			</div>
-			
-      
+        <h1>About Me</h1>
+        <p><strong>Click to reveal a random fact about me:</strong></p>
+        
+        <div class="carousel-container" onclick="nextFact()">
+            <img id="carousel-image" src="randomfactphoto.jpg" alt="Random Fact Image">
+            <p id="carousel-fact" class="fact-text">Click to see a fact!</p>
+        </div>
     </section>
+    
+    
+    
 
     <section id="section3">
         <h1>My Content</h1>

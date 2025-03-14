@@ -17,6 +17,88 @@ body {
     text-align: center;
 }
 
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.popup-overlay {z-index: 9999;
+}
+
+.show-popup {
+    display: flex !important;
+    opacity: 1;
+    visibility: visible;
+}
+/* Popup Content Box */
+.popup-content {
+    background: #F4E1C1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.popup-content h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #005f73;
+    margin-bottom: 20px;
+}
+/* Input and Button Styling */
+#email-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#email-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #005f73;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#email-form button:hover {
+    background: #003f4f;
+}
+
+/* Close Button */
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+#close-popup:hover {
+    color: #000;
+}
+
+
 /* Navigation Bar */
 header {
     position: fixed;
@@ -122,11 +204,47 @@ section {
     text-align: center;
     margin-bottom: 20px;
 }
-.no-bullet-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+/* carousel */
+.carousel-container {
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-container:hover img {
+    opacity: 1; /* Make image fully visible on hover */
+}
+
+/* Fact Text Overlay */
+.fact-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f4e1c16d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+}
+
+
 /* Social Media Links */
 #section3 ul {
     list-style: none;

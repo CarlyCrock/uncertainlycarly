@@ -43,11 +43,23 @@ const facts = [
     "I listen to podcasts and audiobooks at 2.0x speed.",
     "I have ten siblings.",
     "I don't like donuts.",
-    "My Dad is dead."
+    "My Dad is dead.",
+    "I grew up in Southern CA.",
+    "I'm fluent in Gen Z Slang.",
+    "I've never broken a bone.",
+    "I hate running.",
+    "I don't eat breakfast.",
+    "I love love love coffee."
 ];
 
 const images = [
     "randomfactphoto.jpg",
+    "randomfactphoto.jpg",
+    "randomfactphoto.jpg",
+    "randomfactphoto.jpg",
+    "randomfactphoto.jpg",
+    "randomfactphoto.jpg",
+    "randomfactphoto.jpg", 
     "randomfactphoto.jpg",
     "randomfactphoto.jpg",
     "randomfactphoto.jpg",

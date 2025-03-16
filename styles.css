@@ -244,7 +244,20 @@ section {
     width: 80%;
 }
 
-
+/* Section 3 */
+#section3 h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F4E1C1;
+    margin-bottom: 20px;
+}
+#section3 p {
+    font-size: 1.0rem;
+    color: #F4E1C1;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 /* Social Media Links */
 #section3 ul {
     list-style: none;
@@ -252,7 +265,10 @@ section {
     display: flex;
     gap: 15px;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 /* Social Media Icons */
 #section3 ul li a {
     text-decoration: none;
@@ -265,24 +281,72 @@ section {
     transition: color 0.3s ease;
 }
 
-
+/* Hover Effect */
 #section3 ul li a:hover {
     color: #f8f1f1;
 }
 
-#section3 h1 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #F4E1C1;
-    margin-bottom: 20px;
-}
-#section3 p {
-    font-size: 1.0rem;
-    color: #F4E1C1;
-    max-width: 600px;
+/* Support Me Section */
+#support-me {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    
 }
+
+/* "Support Me" Text */
+
+
+/* Coffee Icon Link */
+#support-me a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #F4E1C1;
+    font-family: poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    transition: color 0.3s ease;
+}
+
+/* Coffee Icon */
+#support-me .coffee-icon {
+    width: 100px; /* Adjusted for better alignment */
+    height: 100px;
+    display: block;
+
+}
+#support-me .coffee-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #333); /* Add shadow effect on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+    transition: opacity 0.3s ease;
+}
+#support-me .coffee-icon:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    transition: transform 0.1s ease;
+}
+#support-me .coffee-icon:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 5px #333; /* Add shadow effect on focus */
+}
+#support-me .coffee-icon:focus-visible {
+    outline: 2px solid #333; /* Add focus outline for accessibility */
+    outline-offset: 2px; /* Space between outline and element */
+}
+
+
+
+/* Hover Effect */
+#support-me a:hover {
+    color: #f8f1f1;
+}
+
+
 /* Contact Form */
 form {
     display: flex;
